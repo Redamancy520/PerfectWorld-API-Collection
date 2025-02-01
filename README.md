@@ -18,19 +18,14 @@
 
 ---
 
-## 📂 目录结构
+## 📂 文档目录
 
-```plaintext
-PerfectWorld-API-Collection/
-├── docs/               # API 文档与说明
-│   ├── ...             # 其他 API
-│
-├── examples/           # API 请求示例
-│   ├── python/         # Python 示例
-│
-├── README.md           # 项目介绍 & 说明文档
-└── LICENSE             # 开源协议
-```
++ **账号相关**
+    - [玩家主页](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/detailStats.md)
+    - [登录](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/login.md)
++ **数据相关 (**`data`** 文件夹)**
+    - [比赛记录列表](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/data/matchlist.md)
+
 
 ---
 
