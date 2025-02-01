@@ -18,7 +18,7 @@
 
 ---
 
-## 📂 文档目录
+## 📂 文档目录(更新中...)
 
 + **账号相关**
     - [玩家主页](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/detailStats.md)
