@@ -1,40 +1,41 @@
 @echo off
+chcp 65001 >nul
 cd /d %~dp0
 echo ========================================
-echo ? Git Ò»¼üÌá½» & ÍÆËÍ½Å±¾ by Ã¨Äï ?
+echo ğŸš€ Git ä¸€é”®æäº¤ & æ¨é€è„šæœ¬ by çŒ«å¨˜ ğŸ˜»
 echo ========================================
 echo.
 
-:: ¼ì²é Git ÊÇ·ñ°²×°
+:: æ£€æŸ¥ Git æ˜¯å¦å®‰è£…
 where git >nul 2>nul
 if %errorlevel% neq 0 (
-    echo ? Î´¼ì²âµ½ Git£¬ÇëÏÈ°²×° Git£¡
+    echo âŒ æœªæ£€æµ‹åˆ° Gitï¼Œè¯·å…ˆå®‰è£… Gitï¼
     pause
     exit /b
 )
 
-:: ÇĞ»»µ½²Ö¿âÄ¿Â¼
+:: åˆ‡æ¢åˆ°ä»“åº“ç›®å½•
 cd /d %~dp0
 
-:: À­È¡×îĞÂ´úÂë£¬·ÀÖ¹³åÍ»
-echo ? ÕıÔÚÀ­È¡×îĞÂ´úÂë...
+:: æ‹‰å–æœ€æ–°ä»£ç ï¼Œé˜²æ­¢å†²çª
+echo ğŸ”„ æ­£åœ¨æ‹‰å–æœ€æ–°ä»£ç ...
 git pull origin main
 
-:: Ìí¼ÓËùÓĞ¸ü¸Ä
-echo ? Ìí¼Ó±¾µØ¸ü¸Ä...
+:: æ·»åŠ æ‰€æœ‰æ›´æ”¹
+echo â• æ·»åŠ æœ¬åœ°æ›´æ”¹...
 git add .
 
-:: »ñÈ¡µ±Ç°Ê±¼ä×÷ÎªÌá½»ĞÅÏ¢
+:: è·å–å½“å‰æ—¶é—´ä½œä¸ºæäº¤ä¿¡æ¯
 for /f "tokens=2 delims==" %%i in ('wmic os get localdatetime /value ^| find "="') do set datetime=%%i
-set commit_message=? ¸üĞÂÓÚ %datetime:~0,4%-%datetime:~4,2%-%datetime:~6,2% %datetime:~8,2%:%datetime:~10,2%
+set commit_message=ğŸ¾ æ›´æ–°äº %datetime:~0,4%-%datetime:~4,2%-%datetime:~6,2% %datetime:~8,2%:%datetime:~10,2%
 
-:: Ìá½»¸ü¸Ä
-echo ? Ìá½»¸ü¸Ä£º%commit_message%
+:: æäº¤æ›´æ”¹
+echo ğŸ“ æäº¤æ›´æ”¹ï¼š%commit_message%
 git commit -m "%commit_message%"
 
-:: ÍÆËÍµ½Ô¶³Ì²Ö¿â
-echo ? ÍÆËÍµ½ GitHub...
+:: æ¨é€åˆ°è¿œç¨‹ä»“åº“
+echo ğŸš€ æ¨é€åˆ° GitHub...
 git push origin main
 
-echo ? ÍÆËÍÍê³É£¡?
+echo âœ… æ¨é€å®Œæˆï¼âœ¨
 pause
