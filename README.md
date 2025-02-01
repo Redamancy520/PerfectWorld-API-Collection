@@ -23,7 +23,7 @@
 + **账号相关**
     - [玩家主页](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/detailStats.md)
     - [登录](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/login.md)
-+ **数据相关 (**`data`** 文件夹)**
++ **数据相关**
     - [比赛记录列表](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/data/matchlist.md)
 
 
