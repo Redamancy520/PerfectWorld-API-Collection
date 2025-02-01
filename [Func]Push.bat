@@ -21,8 +21,11 @@ cd /d %~dp0
 echo 🔄 正在拉取最新代码...
 git pull origin master
 
+
 :: 添加所有更改
-echo ➕ “添“加”本“地”更“改”
+
+echo ➕ 添加本地更改
+
 git add .
 
 :: 获取当前时间作为提交信息
