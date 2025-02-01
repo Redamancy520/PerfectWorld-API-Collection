@@ -19,7 +19,7 @@ cd /d %~dp0
 
 :: 拉取最新代码，防止冲突
 echo 🔄 正在拉取最新代码...
-git pull origin main
+git pull origin master
 
 :: 添加所有更改
 echo ➕ 添加本地更改...
@@ -35,7 +35,7 @@ git commit -m "%commit_message%"
 
 :: 推送到远程仓库
 echo 🚀 推送到 GitHub...
-git push origin main
+git push origin master
 
 echo ✅ 推送完成！✨
 pause
