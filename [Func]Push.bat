@@ -2,7 +2,7 @@
 chcp 65001 >nul
 cd /d %~dp0
 echo ========================================
-echo  Git 一键提交 & 推送脚本 by ChatGPT 
+echo 🚀 Git 一键提交 "&" 推送脚本 by ChatGPT 😻
 echo ========================================
 echo.
 
