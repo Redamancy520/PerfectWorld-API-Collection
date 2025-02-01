@@ -1,5 +1,6 @@
 @echo off
-chcp 65001 >nul
+chcp 65001 >nul  &  cls
+
 cd /d %~dp0
 echo ========================================
 echo 🚀 Git 一键提交 & 推送脚本 by 猫娘 😻
