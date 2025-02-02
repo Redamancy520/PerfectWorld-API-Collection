@@ -39,7 +39,7 @@
 | steamAvatar | Steam头像(目前为NULL) | String |
 | appNickName | 完美平台用户编号 | String |
 | userId | 完美平台用户ID | number |
-| ladderType | 未知 | int |
+| ladderType | 未知 | number |
 
 
 #### 请求示例
