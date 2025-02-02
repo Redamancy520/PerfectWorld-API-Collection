@@ -6,6 +6,8 @@ echo 🚀 Git 一键提交 "&" 推送脚本 by ChatGPT 😻
 echo ========================================
 echo.
 
+set http_proxy=http://127.0.0.1:7890 & set https_proxy=http://127.0.0.1:7890
+
 :: 检查 Git 是否安装
 where git >nul 2>nul
 if %errorlevel% neq 0 (
