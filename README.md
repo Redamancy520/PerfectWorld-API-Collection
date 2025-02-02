@@ -25,6 +25,9 @@
     - [登录](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/account/login.md)
 + **数据相关**
     - [比赛记录列表](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/data/matchlist.md)
++ **功能相关**
+    - [搜索玩家](https://github.com/Redamancy520/PerfectWorld-API-Collection/blob/master/docs/func/searchUsers.md)
+
 
 
 ---
